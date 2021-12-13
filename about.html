@@ -1,0 +1,146 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>博客</title>
+    <link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="./css/style.css" rel='stylesheet' type='text/css' />
+    <link href="./css/base.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="博客" />
+    <meta name="description" content="博客" />
+    <!----webfonts---->
+    <!----//webfonts---->
+    <script src="./js/jquery.min.js"></script>
+    <!--end slider -->
+    <!--script-->
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!---->
+
+</head>
+
+<body>
+    <!---header---->
+    <div class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="header_top_l">
+                    <p>Hi！欢迎来到 <span class="author">御坂美琴</span> 的博客</p>
+                </div>
+                <div class="header_top_r">
+                    <!-- <p>
+					<a href="{:url('blogger/index/login')}">登录</a>
+					<a href="{:url('blogger/index/register')}">注册</a>
+				</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom:20px">
+            <!-- <div class="logo">
+                <a href="index.html"><img src="{:base_url()}public/Home/images/logo.png" title="" /></a>
+            </div> -->
+            <!---start-top-nav---->
+            <div class="top-menu">
+
+                <span class="menu"> </span>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./privacy.html">隐私政策</a></li>
+                    <li class="active"><a href="./about.html">关于我们</a></li>
+                    <div class="clearfix"> </div>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <script>
+                $("span.menu").click(function () {
+                    $(".top-menu ul").slideToggle("slow", function () {
+                    });
+                });
+            </script>
+            <!---//End-top-nav---->
+        </div>
+    </div>
+
+
+
+    <!--/header-->
+    <div class="content">
+        <div class="container">
+            <div class="content-grids">
+                <div class="col-md-8 content-main">
+                    <div class="content-grid">
+                        <h4 class="detail-title" style="text-align: center;width: 100%;">关于我们</h4>
+                        <div class="detail_div" style=" font-size: 14px; line-height: 200%; ">
+                            <p> </p>
+                            <p style="text-indent: 2em">
+				            <p>无特定为了什么，纯属兴趣使然，只是想让大家在日常中能提供一些帮助，不知道是否能帮得上忙，如果帮得上就好了。</p>
+
+				            <p>为了更好的体验，如果大家有什么建议，或者希望有什么样的实用功能。可以跟作者说，只要不难实现的都尽量满足。有想法的大佬可以联系我 wcact@qq.com。或者加入QQ群：93116669。谢谢大家！</p>
+
+
+				            <p>炮姐赛高<p>
+                                
+				            <p> <img  src="./images/paojie.png"  width="200" height="200"></p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 content-right">
+                    <!-- <div class="recent">
+                        <h3>站内搜索</h3>
+                        <div class="search">
+                            <form action="{:url('index/search')}" method="get">
+                                <input type="text" name="keywords" placeholder="请输入关键字" required="">
+                                <input type="submit" value="" />
+                            </form>
+                        </div>
+                    </div> -->
+                    <!-- <div class="recent">
+                        <h3>热门文章</h3>
+                        <ul>
+                            <li><a href="{:url('index/detail', array('id' => $va.article_id))}">{$va.article_title}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recent">
+                        <h3>推荐文章</h3>
+                        <ul>
+                            <li><a href="{:url('index/detail', array('id' => $va.article_id))}">{$va.article_title}</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!--<div class="recent">
+                        <h3>友情链接</h3>
+                        <ul>
+                            <li><a href="https://www.zhaorui.info/" target="_blank">肇锐博客</a></li>
+                            <li><a href="https://www.fujieace.com/" target="_blank">付杰博客</a></li>
+                            <li><a href="http://www.cnblogs.com/richerdyoung/" target="_blank">依然范儿特西博客</a></li>
+                        </ul>
+                    </div>-->
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    <div class="footer">
+
+        <div class="container">
+            <p>欢迎来到御坂美琴博客,邮箱：wcact@qq.com,QQ群：93116669</p>
+        </div>
+    </div>
